@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Registrarse</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-item text-center>
+      <ion-img width="300" height="185" src="assets/imgs/Learning.jpg" ></ion-img>
+      </ion-item>
+  <form [formGroup]="myForm" (ngSubmit)="signup()">
+    <ion-list>
+      <ion-item>
+        <ion-icon name="person" item-left></ion-icon>
+        <ion-label stacked>Correo Electronico:</ion-label>
+        <ion-input formControlName="email" type="text" placeholder="Ingresar Correo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="key" item-left></ion-icon>
+        <ion-label stacked>Contraseña:</ion-label>
+        <ion-input formControlName="password" type="password" placeholder=" Contraseña"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div padding>
+      <button ion-button block type="submit" [disabled]="!myForm.valid">Registrate</button>
+    </div>
+  </form>
+</ion-content>

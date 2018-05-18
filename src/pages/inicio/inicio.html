@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-navbar color="primary">
+
+    <ion-buttons start>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+
+      <ion-title>Lear Stu</ion-title>
+      
+  </ion-navbar>
+    
+    
+</ion-header>
+
+
+
+<ion-content padding>
+
+    <ion-item text-center>
+        <ion-img width="250" height="150" src="assets/imgs/Learning.jpg" ></ion-img>
+      </ion-item>
+
+      <ion-card>
+        <img width="100" height="100" src="assets/imgs/code.png"/>
+        <ion-card-content>
+          <ion-card-title>
+             Curso De JavaScript
+            </ion-card-title>
+          <p>
+            Aqui podras prender javascript desde 0 hasta nivel intermedio
+          </p>
+        </ion-card-content>
+        <button ion-button round [navPush]="JavascriptPage">Ver</button>
+        
+      </ion-card>
+
+      <ion-card>
+        <img width="100" height="100" src="assets/imgs/css.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Curso De CSS3
+            </ion-card-title>
+          <p>
+            Aprenderas a utilizar css3 desde cero a nivel intermedio con cssgrid
+          </p>
+        </ion-card-content>
+        <button ion-button round [navPush]="CssPage">Ver</button>
+      </ion-card>
+
+      <ion-card>
+        <img width="100" height="100" src="assets/imgs/java.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Curso De Java Desde Cero
+            </ion-card-title>
+          <p>
+           Aprenderas a como programas en java desde cero
+          </p>
+        </ion-card-content>
+        <button ion-button round [navPush]="JavaPage">Ver</button>
+      </ion-card>
+
+
+  
+
+      
+	 
+   
+
+</ion-content>
